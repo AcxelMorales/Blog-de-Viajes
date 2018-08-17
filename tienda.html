@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Tienda</title>
+    <link rel="icon" href="img/One.ico">
+    <link rel="stylesheet" href="css/tienda.css">
+</head>
+
+<body>
+    <div class="contenedor">
+        <header>
+            <img src="img/logo.png" alt="Logo">
+        </header>
+        <div class="navegacion">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="index.html">Inicio</a>
+                    </li>
+                    <li>
+                        <a href="empresa.html">Nosotros</a>
+                        <ul>
+                            <li>
+                                <a href="empresa.html#m">Misión</a>
+                            </li>
+                            <li>
+                                <a href="empresa.html#v">Visión</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="blog.html">Blog</a>
+                        <ul>
+                            <li>
+                                <a href="#">Ciudades</a>
+                            </li>
+                            <li>
+                                <a href="promociones.html">Promociones</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#modal">Contacto</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <img src="img/hero.jpg" alt="hero">
+        </div>
+        <div class="productos">
+            <h2>Nuestros Productos</h2>
+            <ul class="lista-productos">
+                <li>
+                    <img src="img/camisa_1.png" alt="c1">
+                    <p>HTML5
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_2.png" alt="c2">
+                    <p>CSS3
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_3.png" alt="c3">
+                    <p>Node JS
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_4.png" alt="c4">
+                    <p>JavaScript
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_5.png" alt="c5">
+                    <p>Angular JS
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_6.png" alt="c6">
+                    <p>Git - Github
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_7.png" alt="c7">
+                    <p>Wordpress
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+                <li>
+                    <img src="img/camisa_8.png" alt="c8">
+                    <p>Foundation
+                        <span> $25</span>
+                    </p>
+                    <a href="#" class="btn">Comprar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="modal" class="modal">
+        <aside class="modal-box">
+            <h2>Contáctanos</h2>
+            <form>
+                <input type="text" placeholder="Nombre" class="input" autocomplete="off">
+                <input type="email" placeholder="E-mail" class="input" autocomplete="off">
+                <textarea name="area" id="txtarea" cols="30" rows="5" placeholder="Dudas o comentarios" class="input" autocomplete="off"></textarea>
+                <button type="submit" id="btn" class="btn">Enviar</button>
+                <a href="#" class="cerrar">CERRAR</a>
+            </form>
+        </aside>
+    </div>
+</body>
+
+</html>

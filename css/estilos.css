@@ -1,0 +1,287 @@
+/* Generales */
+
+:root {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, serif;
+}
+
+/* Centrado y header */
+
+header {
+    padding: 20px 0;
+}
+
+.contenedor {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navegación */
+
+.navegacion {
+    background-color: #db008d;
+}
+
+nav {
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+nav ul {
+    list-style: none;
+}
+
+/* Ocupamos los floats y los limpiamos */
+
+nav>ul>li {
+    float: left;
+}
+
+nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul li a {
+    display: inline-block;
+    width: 200px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul li a:hover {
+    background-color: #00b8e4;
+}
+
+/* Submenus */
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: rgba(0, 184, 228, .7);
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+nav ul li:hover {
+    background-color: rgba(0, 184, 228, .7);
+}
+
+/* Contenido principal ocupamos float, y como es de costumbre, limpiarlos en el contenedor padre */
+
+div.contenido::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+main {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    margin-top: 30px;
+}
+
+/* Articulos */
+
+article {
+    margin-top: 30px;
+}
+
+h2 {
+    color: #00b8e4;
+    margin-bottom: 20px;
+}
+
+article img {
+    float: left;
+    width: 300px;
+    margin-right: 30px;
+}
+
+article p {
+    line-height: 2;
+}
+
+.boton {
+    background-color: #00b8e4;
+    padding: 10px 30px;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+}
+
+/* Sidebar */
+
+aside ul {
+    list-style: none;
+}
+
+aside ul li {
+    padding: 10px 0 10px 10px;
+}
+
+aside ul li:hover {
+    background-color: #00b8e4;
+    cursor: pointer;
+    color: white
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #00b8e4;
+}
+
+aside ul li:hover a {
+    color: white;
+}
+
+.modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.89);
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal:target {
+    display: flex;
+}
+
+.modal-box {
+    width: 50%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #FBA905;
+    border-radius: 10px;;
+}
+
+.modal form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+div.modal>aside>h2 {
+    color: #db008d;
+    letter-spacing: 2px;
+}
+
+.input {
+    margin-bottom: 10px;
+    padding: 7px;
+    outline: none;
+    color: steelblue;
+    width: 100%;
+}
+
+[type="submit"] {
+    width: 40%;
+    height: 35px;
+    outline: none;
+    margin: 0 auto;
+    background-color: #00b8e4;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-size: 17px;
+}
+
+.cerrar {
+    display: block;
+    text-decoration: none;
+    width: 40%;
+    height: 35px;
+    outline: none;
+    margin: 0 auto;
+    background-color: #db008d;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    letter-spacing: 1px;
+    text-align: center;
+    padding: 7px;
+}
+
+/* Footer */
+
+footer {
+    background-color: #db008d;
+    padding-top: 40px;
+    margin-top: 40px;
+}
+
+footer h2 {
+    color: white;
+}
+
+footer div.contenedor::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+footer div.nosotros {
+    float: left;
+    width: 30%;
+    color: white;
+}
+
+footer div.menu {
+    float: right;
+    width: 40%;
+    text-align: right;
+}
+
+footer nav {
+    width: auto;
+}
+
+footer nav ul li a {
+    width: auto;
+}
+
+p.copyright {
+    padding: 20px 0;
+    text-align: center;
+    color: white;
+}
